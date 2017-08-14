@@ -1,0 +1,11 @@
+
+
+<h1>
+	Restaurants available in {{location.location_name}}
+</h1>
+
+<ul>
+	{% for restaurant in location.restaurant_set.all %}
+	<li> {{ restaurant.restaurant_name }} </li>
+	{% endfor %}
+</ul>
